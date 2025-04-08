@@ -67,9 +67,7 @@ The Atlas CLI provides a simple way to create a local MongoDB deployment:
    atlas deployments start local
    ```
 
-4. Select the following prompts and your terminal should look like the below imaage `local` -> `defualt` -> `compass`.  Ensure you copy the `Connection string:` details to put in your springboot configurations.
-
-![alt text](readmeImages/atlas-cli-prompts.png)
+4. Select the following prompts and your terminal should look like the below imaage `local` -> `defualt` -> `compass`.  Ensure you copy the `Connection string:` details to put in your springboot configurations. ![MyImage](readmeImages/atlas-cli-prompts.png)
 
 5. If installed, Compass should automatically open with the connection to your local cluster.
 
@@ -82,19 +80,19 @@ For detailed instructions, see the [MongoDB Atlas CLI documentation](https://www
 3. Set up a database user with read/write privileges
 4. Configure network access (whitelist your IP address)
 5. Get your connection string from the Atlas UI
-6. Update your `application.properties` or `application.yml` with the Atlas connection string
+6. Open Compass on your local machine and use the credentials to connect to your Atlas instance
 
 ### Setting Up Required MongoDB Indexes
 
 Once MongoDB is up and running, you need to set up the following indexes for efficient querying using MongoDB Compass:
 
-1. Open MongoDB Compass and connect to your MongoDB instance
-2. Click on the "mongosh" button in the top-right corner of the Compass interface to open the MongoDB Shell
-3. Run the following commands in the mongosh console:
+1. Click on the "Open MongoDB Shell" button in the top-right corner of the Compass interface to open the MongoDB Shell ![Compass MongoDB Shell](readmeImages/mongodb-mongosh-shell.png)
+2. Run the following commands in the console:
    ```javascript
-   // Switch to the memberdb database
+   // Switch to the memberdb database referenced in the code
    use memberdb
    
+   // If the database is empty it will create the member collection
    // Create a unique compound index on memberId and currInd
    // This ensures only one active record exists per memberId
    db.member.createIndex(
@@ -123,7 +121,7 @@ These indexes are critical for both performance and data integrity in the applic
    ```
 
 2. Update your MongoDB connection string in the Spring Boot configuration:
-   - Open src/main/resources/application.properties (or application.yml)
+   - Open src/main/resources/application.properties
    - Set the URI to your local or Atlas connection string, for example:
      ```
      spring.data.mongodb.uri=mongodb://localhost:27017/memberdb
@@ -191,5 +189,3 @@ Invoke-RestMethod -Uri "http://localhost:8080/members/updateMemberKeepHistory" -
 # Retrieve the current member record
 Invoke-RestMethod -Uri "http://localhost:8080/members/latestRecord/12345681"
 ```
-
-# spring-mongodb-versioning-pattern
