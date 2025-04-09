@@ -52,8 +52,8 @@ When a member record is updated:
 - Java 17 or higher
 - MongoDB version 6 or higher
 - Maven 3.6 or higher 
-- MongoDB Compass --> (Download Link)[https://www.mongodb.com/try/download/compass]
-- Docker and Atlas CLI (For Local MongoDB Deployment only) --> (Atlas CLI Download Link)[https://www.mongodb.com/docs/atlas/cli/current/install-atlas-cli/]
+- MongoDB Compass --> [Download Link](https://www.mongodb.com/try/download/compass)
+- Docker and Atlas CLI (For Local MongoDB Deployment only) --> [Atlas CLI Download Link](https://www.mongodb.com/docs/atlas/cli/current/install-atlas-cli/)
 
 ### MongoDB Setup
 
