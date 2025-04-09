@@ -23,7 +23,7 @@ The application follows a standard Spring Boot architecture with:
 - **Repositories**: Manage data access and persistence
 - **Models**: Define the data structures
 
-## Related Documentation for Features impliemented
+## Related Documentation for MongoDB Features
 
 - [Partial Indexing](https://www.mongodb.com/docs/manual/core/index-partial/)
 - [Compound Indexing](https://www.mongodb.com/docs/manual/core/indexes/index-types/index-compound/)
