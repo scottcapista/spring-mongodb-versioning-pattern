@@ -25,12 +25,12 @@ The application follows a standard Spring Boot architecture with:
 
 ## Related Documentation for Features impliemented
 
-- [Partial Indexing] (https://www.mongodb.com/docs/manual/core/index-partial/)
-- [Compound Indexing] (https://www.mongodb.com/docs/manual/core/indexes/index-types/index-compound/)
-- [ESR Indexing Rule] (https://www.mongodb.com/docs/manual/tutorial/equality-sort-range-rule/)
-- [Transactions] (https://www.mongodb.com/docs/manual/core/transactions/)
-- [Update Syntax Options (Mongo Shell)] (https://www.mongodb.com/docs/manual/reference/method/db.collection.update/)
-- [Update Syntax Options (Java)] (https://www.mongodb.com/docs/drivers/java/sync/current/usage-examples/updateOne/)
+- [Partial Indexing](https://www.mongodb.com/docs/manual/core/index-partial/)
+- [Compound Indexing](https://www.mongodb.com/docs/manual/core/indexes/index-types/index-compound/)
+- [ESR Indexing Rule](https://www.mongodb.com/docs/manual/tutorial/equality-sort-range-rule/)
+- [Transactions](https://www.mongodb.com/docs/manual/core/transactions/)
+- [Update Syntax Options (Mongo Shell)](https://www.mongodb.com/docs/manual/reference/method/db.collection.update/)
+- [Update Syntax Options (Java)](https://www.mongodb.com/docs/drivers/java/sync/current/usage-examples/updateOne/)
 
 ### Data Model
 
