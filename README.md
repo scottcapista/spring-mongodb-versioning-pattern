@@ -23,6 +23,15 @@ The application follows a standard Spring Boot architecture with:
 - **Repositories**: Manage data access and persistence
 - **Models**: Define the data structures
 
+## Related Documentation for Features impliemented
+
+- [Partial Indexing] (https://www.mongodb.com/docs/manual/core/index-partial/)
+- [Compound Indexing] (https://www.mongodb.com/docs/manual/core/indexes/index-types/index-compound/)
+- [ESR Indexing Rule] (https://www.mongodb.com/docs/manual/tutorial/equality-sort-range-rule/)
+- [Transactions] (https://www.mongodb.com/docs/manual/core/transactions/)
+- [Update Syntax Options (Mongo Shell)] (https://www.mongodb.com/docs/manual/reference/method/db.collection.update/)
+- [Update Syntax Options (Java)] (https://www.mongodb.com/docs/drivers/java/sync/current/usage-examples/updateOne/)
+
 ### Data Model
 
 The core `Member` entity contains:
@@ -95,6 +104,7 @@ Once MongoDB is up and running, you need to set up the following indexes for eff
    // If the database is empty it will create the member collection
    // Create a unique compound index on memberId and currInd
    // This ensures only one active record exists per memberId
+   // Only Indexes documents that have currInd = "Y" reducing the overall size of the index
    db.member.createIndex(
      {"memberId":1,"currInd":1}, 
      {
