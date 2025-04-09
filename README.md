@@ -61,24 +61,25 @@ When a member record is updated:
 
 The Atlas CLI provides a simple way to create a local MongoDB deployment:
 
-1. Install the Atlas CLI:
+1. Mac only Install the Atlas CLI:
+   Use the download link in prerequisites for windows
    ```
    brew install mongodb-atlas-cli
    ```
 
-2. Create a local Atlas deployment:
+3. Create a local Atlas deployment:
    ```
    atlas deployments setup local
    ```
 
-3. Start your local deployment:
+4. Start your local deployment:
    ```
    atlas deployments start local
    ```
 
-4. Select the following prompts and your terminal should look like the below imaage `local` -> `defualt` -> `compass`.  Ensure you copy the `Connection string:` details to put in your springboot configurations. ![MyImage](readmeImages/atlas-cli-prompts.png)
+5. Select the following prompts and your terminal should look like the below imaage `local` -> `defualt` -> `compass`.  Ensure you copy the `Connection string:` details to put in your springboot configurations. ![MyImage](readmeImages/atlas-cli-prompts.png)
 
-5. If installed, Compass should automatically open with the connection to your local cluster.
+6. If installed, Compass should automatically open with the connection to your local cluster.
 
 For detailed instructions, see the [MongoDB Atlas CLI documentation](https://www.mongodb.com/docs/atlas/cli/current/atlas-cli-deploy-local/#create-a-local-atlas-deployment-1).
 
