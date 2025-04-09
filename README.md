@@ -62,10 +62,12 @@ When a member record is updated:
 The Atlas CLI provides a simple way to create a local MongoDB deployment:
 
 1. Mac only Install the Atlas CLI:
-   Use the download link in prerequisites for windows
+
    ```
    brew install mongodb-atlas-cli
    ```
+
+Use the download link in prerequisites for windows
 
 3. Create a local Atlas deployment:
    ```
